@@ -1,0 +1,59 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.password-wrapper span {
+  margin-left: 2em;
+  font-size: 18px;
+}
+
+.password-hints {
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.password-hints li {
+  padding: 10px 35px;
+  font-size: 14px;
+}
+
+.password-hint__rule--pass {
+  color: green;
+}
+
+.password-hint__rule--pass:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.password-hint__rule--fail {
+  color: red;
+}
+
+.password-hint__rule--fail:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
